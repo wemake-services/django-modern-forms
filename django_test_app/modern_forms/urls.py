@@ -1,10 +1,8 @@
-"""URL configuration for new_forms app."""
-
 from django.urls import path
 
-from .views import ContactFormView
+from django_test_app.modern_forms.views import ContactFormView
 
-app_name = 'new_forms'
+app_name = 'modern_forms'
 
 urlpatterns = [
     path('', ContactFormView.as_view(), name='contact_form'),

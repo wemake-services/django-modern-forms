@@ -1,12 +1,12 @@
-"""Django forms for the new_forms app."""
+from typing import final
 
 from django import forms
 
-from django_new_forms.pydantic import PydanticForm
+from django_modern_forms.pydantic import PydanticForm
+from django_test_app.modern_forms.dtos import ContactDTO
 
-from .dtos import ContactDTO
 
-
+@final
 class ContactForm(PydanticForm[ContactDTO]):
     """Form for contact information."""
 

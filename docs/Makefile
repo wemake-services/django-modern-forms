@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    = -W
 SPHINXBUILD   = python -msphinx
-SPHINXPROJ    = django-new-forms
+SPHINXPROJ    = django-modern-forms
 SOURCEDIR     = .
 BUILDDIR      = _build
 

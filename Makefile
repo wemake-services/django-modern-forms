@@ -17,7 +17,7 @@ type-check:
 
 .PHONY: spell-check
 spell-check:
-	poetry run codespell django_new_forms tests docs README.md CONTRIBUTING.md CHANGELOG.md
+	poetry run codespell django_modern_forms tests docs README.md CONTRIBUTING.md CHANGELOG.md
 
 .PHONY: unit
 unit:

@@ -35,7 +35,7 @@ ALLOWED_HOSTS: list[str] = []
 # Application definition
 
 INSTALLED_APPS = [
-    'new_forms',
+    'modern_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

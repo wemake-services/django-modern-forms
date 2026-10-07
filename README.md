@@ -1,8 +1,8 @@
-# django-new-forms
+# django-modern-forms
 
-[![test](https://github.com/wemake-services/django-new-forms/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/wemake-services/django-new-forms/actions/workflows/test.yml)
-[![codecov](https://codecov.io/gh/wemake-services/django-new-forms/branch/master/graph/badge.svg)](https://codecov.io/gh/wemake-services/django-new-forms)
-[![Python Version](https://img.shields.io/pypi/pyversions/django-new-forms.svg)](https://pypi.org/project/django-new-forms/)
+[![test](https://github.com/wemake-services/django-modern-forms/actions/workflows/test.yml/badge.svg?event=push)](https://github.com/wemake-services/django-modern-forms/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/wemake-services/django-modern-forms/branch/master/graph/badge.svg)](https://codecov.io/gh/wemake-services/django-modern-forms)
+[![Python Version](https://img.shields.io/pypi/pyversions/django-modern-forms.svg)](https://pypi.org/project/django-modern-forms/)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 
 Django forms validation using external serializers
@@ -19,7 +19,7 @@ Django forms validation using external serializers
 ## Installation
 
 ```bash
-pip install django-new-forms
+pip install django-modern-forms
 ```
 
 ## Example
@@ -32,7 +32,7 @@ Showcase how your project can be used:
 
 ## License
 
-[MIT](https://github.com/wemake-services/django-new-forms/blob/master/LICENSE)
+[MIT](https://github.com/wemake-services/django-modern-forms/blob/master/LICENSE)
 
 ## Credits
 

@@ -13,12 +13,12 @@ from django import forms
 from django.core.exceptions import ValidationError
 from typing_extensions import Sentinel, get_original_bases, override
 
-from django_new_forms.exceptions import (
+from django_modern_forms.exceptions import (
     FormConfigurationError,
     ParsedDataUnavailableError,
 )
-from django_new_forms.serializers import BaseSerializer, ValidationIssue
-from django_new_forms.typing import EMPTY, ModelT
+from django_modern_forms.serializers import BaseSerializer, ValidationIssue
+from django_modern_forms.typing import EMPTY, ModelT
 
 
 class ModernForm(forms.Form, Generic[ModelT]):  # noqa: WPS214

@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 
 [tool.poetry]
-name = "django-new-forms"
+name = "django-modern-forms"
 description = "Django forms validation using external serializers"
 version = "0.1.0"
 license = "MIT"
@@ -17,7 +17,7 @@ authors = [
 
 readme = "README.md"
 
-repository = "https://github.com/wemake-services/django-new-forms"
+repository = "https://github.com/wemake-services/django-modern-forms"
 
 keywords = [
   "django",
@@ -179,11 +179,11 @@ mccabe.max-complexity = 6
 pydocstyle.convention = "google"
 
 # For `django_test_app` only:
-isort.known-first-party = ["new_forms"]
+isort.known-first-party = ["modern_forms"]
 
 [tool.ruff.lint.per-file-ignores]
 # Allow public re-exports:
-"django_new_forms/serializers/__init__.py" = ["useless-import-alias"]
+"django_modern_forms/serializers/__init__.py" = ["useless-import-alias"]
 # Allow `assert`s in tests:
 "tests/*.py" = ["assert"]
 
@@ -209,7 +209,7 @@ addopts = [
     # Output:
   "--tb=short",
   # Coverage:
-  "--cov=django_new_forms",
+  "--cov=django_modern_forms",
   "--cov-report=term-missing:skip-covered",
   "--cov-report=html",
   "--cov-report=xml",
@@ -222,6 +222,7 @@ addopts = [
 
 [tool.mypy]
 # The mypy configurations: http://bit.ly/2zEl9WI
+explicit_package_bases = true
 extra_checks = true
 strict_equality_for_none = true
 strict = true
@@ -246,8 +247,8 @@ plugins = [
 
 [tool.pyright]
 # Docs: https://microsoft.github.io/pyright/#/configuration
-include = ["django_new_forms", "tests"]
-strict = ["django_new_forms/**/*"]
+include = ["django_modern_forms", "tests"]
+strict = ["django_modern_forms/**/*"]
 venvPath = "."
 venv = ".venv"
 

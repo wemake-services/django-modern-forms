@@ -1,0 +1,12 @@
+from typing import ClassVar, Generic
+
+from django_modern_forms.forms import ModernForm
+from django_modern_forms.serializers import BaseSerializer
+from django_modern_forms.serializers.pydantic import PydanticSerializer
+from django_modern_forms.typing import ModelT
+
+
+class PydanticForm(ModernForm[ModelT], Generic[ModelT]):
+    """Modern form validated exclusively by Pydantic."""
+
+    serializer: ClassVar[type[BaseSerializer]] = PydanticSerializer

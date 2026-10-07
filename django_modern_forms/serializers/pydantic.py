@@ -3,7 +3,7 @@ try:
 except ImportError:  # pragma: no cover
     raise ImportError(
         'Pydantic support requires the pydantic extra: '
-        "pip install 'django-new-forms[pydantic]'",
+        "pip install 'django-modern-forms[pydantic]'",
     ) from None
 
 from collections.abc import Mapping, Sequence
@@ -11,7 +11,7 @@ from typing import Any, ClassVar
 
 from typing_extensions import override
 
-from django_new_forms.serializers.base import BaseSerializer, ValidationIssue
+from django_modern_forms.serializers.base import BaseSerializer, ValidationIssue
 
 
 class PydanticSerializer(BaseSerializer):
