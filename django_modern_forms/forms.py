@@ -64,7 +64,7 @@ class ModernForm(forms.Form, Generic[ModelT]):  # noqa: WPS214
             raise ParsedDataUnavailableError(
                 'parsed_data is only available after successful validation',
             ) from None
-        return parsed_data  # type: ignore[return-value]
+        return parsed_data  # pyright: ignore[reportReturnType]
 
     def provide_validation_data(self) -> Mapping[str, Any]:
         """Extract submitted widget values without Django field validation."""

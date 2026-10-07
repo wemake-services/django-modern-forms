@@ -9,7 +9,7 @@ Django forms validation using external serializers
 
 ## Features
 
-- [ ] Fully typed and checked with `mypy` and `pyright` in strict modes
+- [x] Fully typed and checked with `mypy` and `pyright` in strict modes
 - [ ] Supports `pydantic2`, but not bound to it
 - [ ] Supports `msgspec`, but not bound to it
 - [ ] 100% test coverage

@@ -59,11 +59,11 @@ msgspec = ["msgspec"]
 
 [tool.poetry.group.dev.dependencies]
 django = "^6.1"
-django-stubs = { version = "^6.1", extras = ["compatible-mypy"] }
+django-stubs = { version = ">=6.1.2,<6.2", extras = ["compatible-mypy"] }
 django-stubs-ext = "^6.1"
 
 pyright = "^1.1"
-mypy = "^2.3"
+mypy = ">=2.4,<3"
 
 wemake-python-styleguide = "^1.4"
 ruff = "^0.16"
@@ -223,6 +223,7 @@ addopts = [
 [tool.mypy]
 # The mypy configurations: http://bit.ly/2zEl9WI
 explicit_package_bases = true
+warn_unreachable = true
 extra_checks = true
 strict_equality_for_none = true
 strict = true
